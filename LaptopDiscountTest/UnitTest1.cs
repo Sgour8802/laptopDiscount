@@ -30,7 +30,7 @@ public class EmployeeDiscountTests
     [Test]
     public void Test_Calculate_DiscountedPrice_PartialLoadEmployee_5PercentDiscount()
     {
-        // Arrange
+        // Assign
         var employeeDiscountObj = new EmployeeDiscount
         {
             EmployeeType = EmployeeType.PartialLoad,
@@ -50,7 +50,7 @@ public class EmployeeDiscountTests
     [Test]
     public void Test_CalculateDiscount_Price_FullTimeEmployee_10PercentDiscount()
     {
-        // Arrange
+        // Assign
         var employeeDiscountObj = new EmployeeDiscount
         {
             EmployeeType = EmployeeType.FullTime,
@@ -68,7 +68,7 @@ public class EmployeeDiscountTests
     [Test]
     public void Test_Calculate_DiscountedPrice_CompanyPurchasingEmployee_With20PercentDiscount()
     {
-        // Arrange
+        // Assign
         var employeeDiscountObj = new EmployeeDiscount
         {
             EmployeeType = EmployeeType.CompanyPurchasing,
@@ -81,4 +81,35 @@ public class EmployeeDiscountTests
         // Assert
         Assert.AreEqual(80m, discountedPrice);
     }
+
+    // Test case for calculate discount price for Full Time Employee_DifferentPrice
+    [Test]
+    public void Test_FullTimeEmployee_DifferentPrice()
+    {
+        var employeeDiscount = new EmployeeDiscount
+        {
+            EmployeeType = EmployeeType.FullTime,
+            Price = 200m
+        };
+
+        var discountedPrice = employeeDiscount.CalculateDiscountedPrice();
+
+        Assert.AreEqual(180m, discountedPrice);
+    }
+
+    // Test cases for company purchasing Employee Different Price
+    [Test]
+    public void TestCase_Employee_DifferentPrice()
+    {
+        var employeeDiscount = new EmployeeDiscount
+        {
+            EmployeeType = EmployeeType.CompanyPurchasing,
+            Price = 250m
+        };
+
+        var discountedPrice = employeeDiscount.CalculateDiscountedPrice();
+
+        Assert.AreEqual(200m, discountedPrice);
+    }
+
 }
