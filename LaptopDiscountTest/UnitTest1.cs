@@ -6,8 +6,10 @@ using Midterm_Exam;
 [TestFixture]
 public class EmployeeDiscountTests
 {
+
+    // Test case for calculate discount price for part time employee with no discount 
     [Test]
-    public void Test_CalculateDiscountedPrice_PartTimeEmployee_WithNoDiscount()
+    public void Test_Calculate_DiscountedPrice_PartTimeEmployee_WithNoDiscount()
     {
         // Assign
         var employeeDiscountObj = new EmployeeDiscount
@@ -23,8 +25,10 @@ public class EmployeeDiscountTests
         Assert.AreEqual(100m, discountedPrice);
     }
 
+    // Test case for calculate discount price for part time employee with 5% discount 
+
     [Test]
-    public void Test_CalculateDiscountedPrice_PartialLoadEmployee_5PercentDiscount()
+    public void Test_Calculate_DiscountedPrice_PartialLoadEmployee_5PercentDiscount()
     {
         // Arrange
         var employeeDiscountObj = new EmployeeDiscount
@@ -40,8 +44,11 @@ public class EmployeeDiscountTests
         Assert.AreEqual(95m, discountedPrice);
     }
 
+
+    // Test case for calculate discount price for part time employee with 10% discount 
+
     [Test]
-    public void Test_CalculateDiscountedPrice_FullTimeEmployee_10PercentDiscount()
+    public void Test_CalculateDiscount_Price_FullTimeEmployee_10PercentDiscount()
     {
         // Arrange
         var employeeDiscountObj = new EmployeeDiscount
@@ -57,8 +64,9 @@ public class EmployeeDiscountTests
         Assert.AreEqual(90m, discountedPrice);
     }
 
+    // Test case for calculate discount price for part time employee with 20% discount 
     [Test]
-    public void Test_CalculateDiscountedPrice_CompanyPurchasingEmployee_With20PercentDiscount()
+    public void Test_Calculate_DiscountedPrice_CompanyPurchasingEmployee_With20PercentDiscount()
     {
         // Arrange
         var employeeDiscountObj = new EmployeeDiscount
