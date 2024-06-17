@@ -1,10 +1,8 @@
 ﻿namespace LaptopDiscountTest;
-using global::Midterm_Exam;
 using Midterm_Exam;
 
-
 [TestFixture]
-public class EmployeeDiscountTests
+public class DiscountTest
 {
 
     // Test case for calculate discount price for part time employee with no discount 
