@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Midterm_Exam", "Midterm_Exam\Midterm_Exam.csproj", "{2821DCBE-A03E-47AA-A1B8-F4382A31CE1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaptopDiscountTest", "LaptopDiscountTest\LaptopDiscountTest.csproj", "{C3605403-A32F-405D-AD46-CDB444BDB2AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2821DCBE-A03E-47AA-A1B8-F4382A31CE1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2821DCBE-A03E-47AA-A1B8-F4382A31CE1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2821DCBE-A03E-47AA-A1B8-F4382A31CE1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2821DCBE-A03E-47AA-A1B8-F4382A31CE1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3605403-A32F-405D-AD46-CDB444BDB2AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3605403-A32F-405D-AD46-CDB444BDB2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3605403-A32F-405D-AD46-CDB444BDB2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3605403-A32F-405D-AD46-CDB444BDB2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {795486BE-995D-416A-B1EF-9FB1D8AE4368}
+	EndGlobalSection
+EndGlobal
