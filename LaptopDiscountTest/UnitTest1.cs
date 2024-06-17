@@ -23,6 +23,7 @@ public class EmployeeDiscountTests
 
         // Assert
         Assert.AreEqual(100m, discountedPrice);
+
     }
 
     // Test case for calculate discount price for part time employee with 5% discount 
@@ -38,10 +39,10 @@ public class EmployeeDiscountTests
         };
 
         // Act
-        var discountedPrice = employeeDiscountObj.CalculateDiscountedPrice();
+        var discountPrice = employeeDiscountObj.CalculateDiscountedPrice();
 
         // Assert
-        Assert.AreEqual(95m, discountedPrice);
+        Assert.AreEqual(95m, discountPrice);
     }
 
 
@@ -58,10 +59,10 @@ public class EmployeeDiscountTests
         };
 
         // Act
-        var discountedPrice = employeeDiscountObj.CalculateDiscountedPrice();
+        var discountPrice = employeeDiscountObj.CalculateDiscountedPrice();
 
         // Assert
-        Assert.AreEqual(90m, discountedPrice);
+        Assert.AreEqual(90m, discountPrice);
     }
 
     // Test case for calculate discount price for part time employee with 20% discount 
@@ -76,10 +77,10 @@ public class EmployeeDiscountTests
         };
 
         // Act
-        var discountedPrice = employeeDiscountObj.CalculateDiscountedPrice();
+        var discountPrice = employeeDiscountObj.CalculateDiscountedPrice();
 
         // Assert
-        Assert.AreEqual(80m, discountedPrice);
+        Assert.AreEqual(80m, discountPrice);
     }
 
     // Test case for calculate discount price for Full Time Employee_DifferentPrice
@@ -92,9 +93,9 @@ public class EmployeeDiscountTests
             Price = 200m
         };
 
-        var discountedPrice = employeeDiscount.CalculateDiscountedPrice();
+        var discountPrice = employeeDiscount.CalculateDiscountedPrice();
 
-        Assert.AreEqual(180m, discountedPrice);
+        Assert.AreEqual(180m, discountPrice);
     }
 
     // Test cases for company purchasing Employee Different Price
@@ -107,9 +108,9 @@ public class EmployeeDiscountTests
             Price = 250m
         };
 
-        var discountedPrice = employeeDiscount.CalculateDiscountedPrice();
+        var discountPrice = employeeDiscount.CalculateDiscountedPrice();
 
-        Assert.AreEqual(200m, discountedPrice);
+        Assert.AreEqual(200m, discountPrice);
     }
 
 }
